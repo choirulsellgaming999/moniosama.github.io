@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Beranda Moni</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-toolbar">
+      <img src="https://i.postimg.cc/HntJTRPH/1717603307116.png" alt="Toolbar" class="toolbar-icon" onclick="toggleSidebar()">
+      <img src="https://i.postimg.cc/J7GYS7Jv/1717660723299.png" alt="Logo Web" class="logo-web">
+    </div>
+    <input type="text" id="searchInput" placeholder="Ketik Pencarian setelah itu tekan cari..." aria-label="Search">
+    <button onclick="searchContent()">Cari</button>
+  </header>
+  
+  <nav class="left-align">
+    <a href="#">Beranda</a>
+    <a href="#">Aplikasi</a>
+    <a href="#">mod apk</a>
+    <a href="#">Lihat Tentang Web Kami</a>
+  </nav>
+
+  <main>
+    <div id="noResultMessage" class="no-result" style="display: none;">Pencarian anda masih belum dirilis - jadi mohon di tunggu ya.</div>
+  </main>
+
+  <footer>
+    <p>Hak Cipta Dilindungi &copy; 2024 - Moniosama</p>
+  </footer>
+
+  <div id="sidebar" class="sidebar">
+    <h2>Pengaturan</h2>
+    <button class="sidebar-icon" onclick="closeSidebar()">Tutup</button>
+    <button class="sidebar-icon" id="darkModeButton" onclick="toggleDarkMode()">Mode Gelap</button>
+    <a href="kebijakan.html" class="sidebar-link">Lihat Kebijakan</a>
+    <a href="jadwal_rilis.html" class="sidebar-link">Lihat jadwal rilis segera hadir</a>
+    <a href="donasi.html" class="sidebar-link">donasi web kak/bg</a>
+    <a href="follow.html" class="sidebar-link">Follow Akun Kami Juga ya</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="sidebar.js"></script>
+  <script src="imgmenu.js"></script>
+</body>
+</html>
